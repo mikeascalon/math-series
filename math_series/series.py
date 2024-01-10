@@ -21,3 +21,22 @@ def lucas(num):
     for _ in range(2, num + 1):
         a, b = b, a + b
     return b
+
+def sum_series(num, first_val = 0, second_val = 1):
+
+    if num == 0:
+        return first_val
+    
+    if num == 1:
+        return second_val
+  
+    
+    a, b = first_val, second_val
+    for _ in range(2, num + 1 ):
+        a, b = b, a + b
+
+
+    return b
+   
+
+
